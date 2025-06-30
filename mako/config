@@ -1,0 +1,15 @@
+# ~/.config/mako/config
+
+[urgency=normal]
+font=Fira Code Bold, Noto Sans JP, 12
+background-color=#0d0f18CC
+text-color=#FFFFFF
+border-color=#a6e3a1
+border-size=3
+padding=10
+margin=10
+default-timeout=2000
+border-radius=12
+anchor=top-center
+text-alignment=center
+width=500

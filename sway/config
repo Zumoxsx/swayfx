@@ -1,0 +1,196 @@
+### ─────────── VARIABLES ───────────
+# Modifier key (Mod4 = Super/Windows key)
+set $mod Mod4
+
+# Preferred terminal
+set $term alacritty
+
+# Application launcher
+set $menu ~/.config/waybar/scripts/menu.sh
+
+### ─────────── OUTPUT CONFIGURATION ───────────
+# Set background wallpaper
+#exec_always  ~/.config/waybar/scripts/w.sh
+# Example for external monitor:
+# output HDMI-A-1 resolution 1920x1080 position 1920,0
+
+### ─────────── INPUT DEVICES ───────────
+input * {
+    dwt enabled               # Disable while typing
+    tap enabled               # Tap-to-click
+    #natural_scroll enabled   # Uncomment for natural scroll
+    #middle_emulation enabled
+    xkb_layout latam         
+}
+
+### ─────────── CURSOR SETTINGS ───────────
+seat * xcursor_theme catppuccin-mocha-dark-cursors 24
+
+### ─────────── WINDOW APPEARANCE ───────────
+
+
+
+gaps inner 20
+gaps outer 20
+
+##Radius
+smart_borders on
+smart_gaps off 
+smart_corner_radius enable
+corner_radius 15
+
+## blur
+blur enable
+blur_xray disable
+blur_passes 1
+blur_radius 2
+
+dim_inactive_colors.unfocused #11111bAA
+
+default_dim_inactive 0.5
+
+
+
+# Border styling
+for_window [class="^.*"] border pixel 0
+
+# Border colors
+#client.focused          #f8f8f2 #f8f8f2 #f8f8f2 #f8f8f2 #f8f8f2
+#client.unfocused        #3b4252 #3b4252 #eceff4 #3b4252 #3b4252
+#client.focused_inactive #3b4252 #3b4252 #eceff4 #3b4252 #3b4252
+#client.urgent           #434c5e #434c5e #eceff4 #434c5e #434c5e
+
+### ─────────── FLOATING BEHAVIOR ───────────
+# Use mod + mouse to move/resize windows
+floating_modifier $mod normal
+
+### ─────────── AUTOSTART APPLICATIONS ───────────
+# Restart Music Player Daemon
+exec_always killall -q ntf_music.sh
+exec_always --no-startup-id ~/.config/waybar/scripts/wallko.sh
+exec_always --no-startup-id ~/.config/waybar/scripts/ntf_music.sh
+
+### ─────────── BASIC KEYBINDINGS ───────────
+# Launch terminal
+bindsym $mod+Return exec $term
+
+# Application launcher
+bindsym $mod+d exec $menu
+
+# Extra scripts
+bindsym $mod+p exec bash ~/.config/waybar/scripts/playlist.sh
+bindsym $mod+Shift+p exec bash ~/.config/waybar/scripts/make_playlist.sh
+bindsym $mod+m exec bash ~/.config/waybar/scripts/music.sh
+bindsym $mod+l exec bash ~/.config/waybar/scripts/lock.sh
+
+# Kill focused window
+bindsym $mod+q kill
+
+# Reload config
+bindsym $mod+Shift+r reload
+
+# Exit Sway with confirmation
+bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit Sway?' -B 'Yes, exit sway' 'swaymsg exit'
+
+### ─────────── WINDOW FOCUS / MOVEMENT ───────────
+# Focus with arrow keys
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move windows
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+### ─────────── WORKSPACES ───────────
+# Asigna workspace 2 al monitor interno (eDP-1
+workspace 2 output eDP-1
+
+# Asigna workspace 1 al HDMI externo (HDMI-A-1)
+workspace 1 output HDMI-A-1
+
+# Switch to workspace
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+
+# Move focused window to workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+
+### ─────────── LAYOUT AND SPLITTING ───────────
+# Split layout
+bindsym $mod+b splith    
+bindsym $mod+v splitv   
+
+# Toggle fullscreen
+bindsym $mod+f fullscreen
+
+# Toggle floating mode
+bindsym $mod+Shift+space floating toggle
+
+# Toggle focus between floating and tiling
+bindsym $mod+space focus mode_toggle
+
+# Focus parent container
+bindsym $mod+a focus parent
+
+bindsym $mod+o layout toggle split
+
+
+### ─────────── SCRATCHPAD ───────────
+#mako & Send window to scratchpad
+bindsym $mod+x move scratchpad
+
+# Show/hide scratchpad window
+bindsym $mod+z scratchpad show
+
+### ─────────── CONTAINER RESIZE MODE ───────────
+mode "resize" {
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+# Enter resize mode
+bindsym $mod+r mode "resize"
+
+### ─────────── MEDIA & SYSTEM KEYS ───────────
+# Audio
+bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym --locked XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# Brightness
+bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+
+# Screenshot
+bindsym Print exec sh -c 'OUTPUT=HDMI-A-1; FILE="$HOME/Pictures/screenshot-$(date +%F_%H-%M-%S).png"; grim  -o "$OUTPUT" "$FILE" && notify-send -u normal "Captura guardada "'
+bindsym Print+Shift exec sh -c 'OUTPUT=eDP-1; FILE="$HOME/Pictures/screenshot-$(date +%F_%H-%M-%S).png"; grim  -o "$OUTPUT" "$FILE" && notify-send -u normal "Captura guardada "'
+# Music control (mpd)
+bindsym $mod+Ctrl+Up exec mpc toggle
+bindsym $mod+Ctrl+Down exec mpc play
+bindsym $mod+Ctrl+Right exec mpc next
+bindsym $mod+Ctrl+Left exec mpc prev
+bindsym $mod+s exec mpc stop
+
+### ─────────── STATUS BAR ───────────
+bar {
+    swaybar_command waybar
+}
+
+### ─────────── INCLUDE SYSTEM CONFIG (OPTIONAL) ───────────
+include /etc/sway/config.d/*
+

@@ -1,0 +1,35 @@
+sw_volume: 100
+audio_device_state:1:PulseAudio Output
+state: play
+current: 11
+time: 29.278000000000002
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0
+mixrampdelay: -1
+lastloadedplaylist: Liminal
+playlist_begin
+0:Liminal/Berylxx - Butterflies.mp3
+1:Liminal/Two Different Worlds.mp3
+2:Liminal/Wishful Thoughts (SoundCloud Exclusive).mp3
+3:Liminal/a near future.mp3
+4:Liminal/after hours (sped up).mp3
+5:Liminal/antent & suffershade - losing you.mp3
+6:Liminal/ash.mp3
+7:Liminal/auroratønes, Exodynamix - empathy.mp3
+8:Liminal/cold nights.mp3
+9:Liminal/deneb - days gone.mp3
+10:Liminal/look, the sky.mp3
+11:Liminal/nevermind.mp3
+12:Liminal/nothing feels the same.mp3
+13:Liminal/nothing left.mp3
+14:Liminal/only yours.mp3
+15:Liminal/rumination.mp3
+16:Liminal/shiver w⧸mezh.mp3
+17:Liminal/stay.mp3
+18:Liminal/until you’ve warmed my heart.mp3
+19:Liminal/wish they were here.mp3
+playlist_end

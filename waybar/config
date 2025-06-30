@@ -1,0 +1,93 @@
+{
+  // ───── GENERAL BAR SETTINGS ─────
+  "output": "HDMI-A-1",              // Target monitor
+  //"height": 54,                      // Bar height (remove for auto-height)
+  //layer": "left",                    // Bar position on top of screen
+  "position": "left",
+    "margin-top": 25,
+    "margin-bottom": 25,
+    "margin-right": 0,
+    "margin-left": 15,
+
+  // ───── MODULE POSITIONS ─────
+  "modules-left": ["custom/launcher", "custom/mpd"],
+  "modules-center": ["sway/workspaces"],
+  "modules-right": ["pulseaudio", "network", "battery", "clock", "custom/power-menu"],
+
+  
+  // ───── SWAY MODULES ─────
+  "sway/workspaces": {
+    "format": "{icon}",
+     "all-outputs": true,
+    "on-click": "activate",
+    "format-icons": {
+      "focused": "󰮯",       // Focused workspace icon
+      "default": "󰊠",      // Default workspace icon 
+    }
+  },
+    
+  // ───── CLOCK ─────
+  "clock": {
+    "format": "{:%H\n%M}",           // Default time format (24h)
+    "tooltip-format": "{:%b\n%d\n%Y}",
+  },
+
+  // ───── NETWORK MODULE ─────
+  "network": {
+    "format-wifi": "",   // Wi-Fi with IP
+    "format-ethernet": "",     // Ethernet with IP
+    "format-disconnected": "󰯡"           // No connection icon
+    
+  },
+
+  // ───── AUDIO MODULE ─────
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "󰖁",                // Icon when muted
+    "format-icons": {
+      "default": ["󰖀", "󰕾"]        // Volume levels
+    }
+  },
+
+  // ───── BATTERY MODULE ─────
+  "battery": {
+    "bat": "BAT0",
+    "adapter": "ADP0",
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "max-length": 20,
+    "format": "{icon}",
+    "format-warning": "{icon}",
+    "format-critical": "{icon}",
+    "format-charging": "<span font-family='Hack Nerd Font'></span>",
+    "format-full": "󱟢",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂"]
+  },
+
+  // ───── CUSTOM MODULES ─────
+
+  // Power menu (shutdown, logout, etc.)
+  "custom/power-menu": {
+    "format": "",
+    "on-click": "bash ~/.config/waybar/scripts/power.sh"
+  },
+
+  // Application launcher icon
+  "custom/launcher": {
+    "format": "",                                // Arch Linux icon
+    "on-click": "~/.config/waybar/scripts/menu.sh",  // Custom launcher scripts
+  },
+
+// MPD music player module
+"custom/mpd": {
+  "format": "{}",
+  "exec": "~/.config/waybar/scripts/show_play_music.sh",
+  "on-click": "~/.config/waybar/scripts/show_ntf_music_click.sh",
+  "interval": 1,
+  "markup": "none"
+}
+
+}

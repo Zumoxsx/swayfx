@@ -1,0 +1,36 @@
+font:
+  normal:
+    family: "Fira Code"
+    style: Regular
+  size: 12.0
+
+colors:
+  bright:
+    black: '0x434758'  # Dracula: #6272a4
+    blue: '0x9cc4ff'   # Dracula: #bd93f9
+    cyan: '0xa3f7ff'   # Dracula: #8be9fd
+    green: '0xddffa7'  # Dracula: #50fa7b
+    magenta: '0xe1acff' # Dracula: #ff79c6
+    red: '0xff8b92'     # Dracula: #ff5555
+    white: '0xffffff'   # Dracula: #f8f8f2
+    yellow: '0xffe585'  # Dracula: #f1fa8c
+  normal:
+    black: '0x101010'   # Dracula: #21222c
+    blue: '0x82aaff'    # Dracula: #bd93f9
+    cyan: '0x89ddff'    # Dracula: #8be9fd
+    green: '0xc3e88d'   # Dracula: #50fa7b
+    magenta: '0xc792ea' # Dracula: #ff79c6
+    red: '0xf07178'     # Dracula: #ff5555
+    white: '0xd0d0d0'   # Dracula: #f8f8f2
+    yellow: '0xffcb6b'  # Dracula: #f1fa8c
+  primary:
+    background: '0x181b28'  # Dracula: #282a36
+    foreground: '0xc3c7d1'  # Dracula: #f8f8f2
+
+window:
+
+  padding:
+    x: 10
+    y: 10
+  opacity: 0.85
+

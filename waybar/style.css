@@ -1,0 +1,186 @@
+/* Font settings */
+* {
+  font-family: Hack Nerd Font;
+  font-size: 19px;
+}
+
+/* Main bar */
+window#waybar {
+  background-color: rgba(13,15,24,0.999);
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 15px;
+}
+
+window#waybar.hidden {
+  opacity: 0.1;
+}
+
+#window {
+  color: #64727d;
+  border-radius:15px;
+}
+
+/* Shared style for most modules */
+
+#custom-launcher {
+  color: #0e91cf;
+  padding: 10px 8px 5px 0px;
+  font-size: 30px;
+
+}
+
+
+/*#custom-reddit {
+  color: #FF4500;
+  padding: 5px 7px 2px 0px;
+  font-size: 25px;
+
+}
+#custom-github {
+  color: #FFFFFF;
+  padding: 2 5 2 0px;
+  font-size: 25px;
+}
+#custom-you {
+  color: #FF0000;
+  padding: 2 10 5 0px;
+  font-size: 25px;
+}*/
+
+
+#custom-mpd {
+  font-family: Fira Code;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 5px 0px;
+  font-size: 25px;
+  margin:10px 5px 15px 5px;
+  background-color: rgba(21,23,32,1);
+  border-radius:15px;
+
+}
+
+#workspaces {
+  font-family: Hack Nerd Font;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 2px 10px;
+  margin: 5px 5px;
+  font-size: 16px;
+  background-color: rgba(21,23,32,1);
+  border-radius:12px 12px 12px 12px;
+
+}
+
+/* Workspaces */
+#workspaces button {
+  color: #7a95c9;
+  box-shadow: inset -3px 0 transparent;
+  margin: 0.1em 0em;
+  padding: 1px 2px 1px 0px;
+  transition: all 0.6s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+}
+
+#workspaces button.focused {
+  color: #ecd3a0;
+  margin: 0;
+  padding: 2px 2px 1px 0px;
+
+}
+
+
+#pulseaudio.muted { color: #fb958b; }
+#pulseaudio {
+  font-family: Hack Nerd Font;
+  font-weight: bold;
+  color: #4a89cb;
+  padding: 5px 2px 5px 0px;
+  font-size: 27px;
+  margin:5px 5px 0px 5px;
+  background-color: rgba(21,23,32,1);
+  border-radius:12px 12px 0px 0px;
+
+
+}
+#network.disconnected {
+  color: #fb958b;
+  padding: 10px 8px 5px 0px;
+  font-size: 22px;
+  margin:0px 5px;
+  background-color: rgba(21,23,32,1);
+}
+
+#network{
+  color: #77bdfb;
+  padding: 10px 14px 5px 0px;
+  font-size: 22px;
+  margin:-3px 5px;
+  background-color: rgba(21,23,32,1);
+/*  border-radius:12px 12px 0px 0px;*/
+}
+
+#battery { color: #8fbcbb;  padding: 10px 2px 5px 0px; font-size: 22px;  margin:0px 5px 5px 5px; background-color: rgba(21,23,32,1); border-radius:0px 0px 12px 12px;
+}
+#battery.charging {color: #7ce38b;  padding: 10px 2px 5px 0px; font-size: 22px; margin:0px 5px 5px 5px; background-color: rgba(21,23,32,1); border-radius:0px 0px 12px 12px;
+}
+#battery.critical,
+#battery.warning,
+#battery.full,
+#battery.plugged {
+  color: #8fbcbb;
+  padding: 10px 2px 5px 0px;
+  font-size: 22px;
+  margin:0px 5px 10px 5px;
+  background-color: rgba(21,23,32,1);
+  border-radius:0px 0px 12px 12px;
+}
+
+#battery.warning {
+  color: #ecd3a0;
+}
+#battery.critical:not(.charging) {
+  color: #fb958b;
+}
+
+
+#clock{
+  font-family: Fira Code;
+  font-weight: bold;
+  color: #8a909e;
+  padding: 10px 2px 10px 0px;
+  margin:10px 5px 10px 5px;
+  font-size: 22px;
+  background-color: rgba(21,23,32,1);
+  border-radius:12px;
+}
+
+#custom-power-menu {
+  color: #e78284;
+  padding: 5px 5px 5px 0px;
+  font-size: 25px;
+  margin:10px 5px 15px 5px;
+  background-color: rgba(21,23,32,1);
+  border-radius:15px;
+
+
+}
+
+/* Tooltip */
+#tooltip,
+#tooltip label {
+  font-family: Fira Code;
+  font-weight: bold;
+  font-size: 10.5px;
+}
+
+#tooltip {
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #1f232b;
+}
+
+#tooltip label {
+  padding: 5px;
+}
