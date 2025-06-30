@@ -43,6 +43,71 @@ My little **swayfx** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/
 ### Navegador
 ![browser](images/browser.png)
 
+---
+
+## 🎹 Atajos de teclado personalizados
+
+### 🪟 SwayFX
+
+| Combinación           | Acción                                                    |
+|-----------------------|-----------------------------------------------------------|
+| `Super + Enter`       | Abrir terminal (Alacritty)                                |
+| `Super + D`           | Lanzar menú de apps (`menu.sh` con Wofi o similar)        |
+| `Super + P`           | Ejecutar `playlist.sh` (lista de reproducción)            |
+| `Super + Shift + P`   | Ejecutar `make_playlist.sh` (crear playlist)              |
+| `Super + M`           | Ejecutar `music.sh`                                       |
+| `Super + L`           | Ejecutar `lock.sh` (bloquear pantalla)                    |
+| `Super + Q`           | Cerrar ventana                                            |
+| `Super + Shift + R`   | Recargar configuración de Sway                            |
+| `Super + Shift + E`   | Salir de Sway con confirmación (ventana swaynag)          |
+| `Super + ←/↓/↑/→`     | Mover el foco entre ventanas                              |
+| `Super + Shift + ←/↓/↑/→` | Mover la ventana actual                               |
+| `Super + 1...5`       | Cambiar de workspace                                      |
+| `Super + Shift + 1...5` | Mover ventana al workspace correspondiente              |
+| `Super + B`           | Dividir horizontalmente (splith)                          |
+| `Super + V`           | Dividir verticalmente (splitv)                            |
+| `Super + F`           | Alternar pantalla completa                                |
+| `Super + Shift + Espacio` | Alternar modo flotante                              |
+| `Super + Espacio`     | Alternar foco entre ventana flotante/tiling               |
+| `Super + A`           | Foco al contenedor padre                                  |
+| `Super + O`           | Alternar modo de layout                                   |
+| `Super + X`           | Enviar ventana al scratchpad                              |
+| `Super + Z`           | Mostrar scratchpad                                        |
+| `Super + R`           | Entrar al modo de resize                                  |
+| `XF86Audio...`        | Control de volumen y micrófono                            |
+| `XF86MonBrightness...`| Control de brillo de pantalla                             |
+| `Print`               | Captura de pantalla del HDMI                              |
+| `Shift + Print`       | Captura de pantalla del eDP                               |
+| `Super + Ctrl + ←/→`  | Canción anterior / siguiente en MPD                       |
+| `Super + Ctrl + ↑`    | Pausar/Reanudar música (mpc toggle)                       |
+| `Super + Ctrl + ↓`    | Reproducir música (mpc play)                              |
+| `Super + S`           | Detener música (mpc stop)                                 |
+
+---
+
+### 📝 Neovim (NvChad base con mappings personalizados)
+
+| Combinación           | Acción                                      |
+|-----------------------|---------------------------------------------|
+| `;`                   | Entrar al modo comando (como `:`)           |
+| `jk` en modo insert   | Salir al modo normal                        |
+| `Ctrl + A`            | Seleccionar todo el archivo                 |
+| `Ctrl + Z`            | Buscar archivos (Telescope)                |
+| `Leader + E`          | Abrir/cerrar NvimTree                       |
+| `Ctrl + S`            | Guardar archivo (en todos los modos)       |
+| `Leader + Y` (visual) | Copiar al portapapeles del sistema         |
+| `Ctrl + E`            | Salir de Neovim sin guardar                 |
+| `Ctrl + ←/↓/↑/→`      | Mover entre splits                          |
+| `Ctrl + Shift + →`    | Crear split vertical                        |
+| `Ctrl + Shift + ↓`    | Crear split horizontal                      |
+| `Ctrl + Alt + ↑/↓/←/→`| Redimensionar splits                        |
+| `Leader + R`          | Recargar configuración de Neovim           |
+| `Esc` en terminal     | Salir del modo terminal (insert → normal)  |
+
+---
+
+
+
 ## 🏗️ Instalación
 
 > ⚠️ Este setup asume que usas una distro basada en Arch Linux. Aún así, puede adaptarse fácilmente.
