@@ -1,31 +1,32 @@
 # SwayFX Dotfiles
 
-My little **swayfx** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/dotfiles?tab=readme-ov-file#-the-themes) theme z0mbi3. It's not ready yet but you can try it...
+My personal **SwayFX** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/dotfiles?tab=readme-ov-file#-the-themes)'s z0mbi3 theme. It's not finished yet, but feel free to try it...
 
-## 🧰 Aplicaciones incluidas
+## 🧰 Included Applications
 
-| Herramienta | Uso | 
-|------------|-----|
-| [SwayFX](https://github.com/WillPower3309/swayfx) | Compositor Wayland con efectos |
-| [Waybar](https://github.com/Alexays/Waybar) | Barra de estado altamente personalizable | 
-| [Alacritty](https://github.com/alacritty/alacritty) | Terminal rápida y con soporte para GPU |
-| [Wofi](https://hg.sr.ht/~scoopta/wofi) | Lanzador de aplicaciones estilo rofi para Wayland |
-| [Mako](https://github.com/emersion/mako) | Notificador para Wayland |
-| [Neovim](https://neovim.io) | Editor de texto avanzado |
-| [Ranger](https://github.com/ranger/ranger) | Navegador de archivos en la terminal |
-| [LSD](https://github.com/lsd-rs/lsd) | `ls` mejorado con iconos |
-| [MPD](https://www.musicpd.org) | Música |
+| Tool | Description |
+|------|-------------|
+| [SwayFX](https://github.com/WillPower3309/swayfx) | Wayland compositor with visual effects |
+| [Waybar](https://github.com/Alexays/Waybar) | Highly customizable status bar |
+| [Alacritty](https://github.com/alacritty/alacritty) | GPU-accelerated terminal |
+| [Wofi](https://hg.sr.ht/~scoopta/wofi) | Wayland launcher (like rofi) |
+| [Mako](https://github.com/emersion/mako) | Notification daemon for Wayland |
+| [Neovim](https://neovim.io) | Modern extensible text editor |
+| [Ranger](https://github.com/ranger/ranger) | Terminal file manager |
+| [LSD](https://github.com/lsd-rs/lsd) | Improved `ls` command with icons |
+| [MPD](https://www.musicpd.org) | Music player daemon |
 
 ---
-## 🖼️ Capturas de pantalla
 
-### Escritorio completo
+## 🖼️ Screenshots
+
+### Full Desktop
 ![all](images/all.png)
 
 ### Neovim
 ![nvim](images/nvim.png)
 
-### Power menu
+### Power Menu
 ![power](images/power.png)
 
 ### Wofi
@@ -34,102 +35,116 @@ My little **swayfx** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/
 ### Music
 ![select_music](images/select_music.png)
 
-### Notificación de música (Mako)
+### Music Notification (Mako)
 ![ntf_music](images/ntf_music.png)
 
 ### Ranger
 ![ranger](images/ranger.png)
 
-### Navegador
+### Browser
 ![browser](images/browser.png)
 
 ---
 
-## 🎹 Atajos de teclado personalizados
+## 🎹 Custom Keybindings
 
 ### 🪟 SwayFX
 
-| Combinación           | Acción                                                    |
-|-----------------------|-----------------------------------------------------------|
-| `Super + Enter`       | Abrir terminal                                   |
-| `Super + D`           | Lanzar menú de apps        |
-| `Super + P`           | Selector de playlist            |
-| `Super + Shift + P`   | Actualiza  playlist              |
-| `Super + M`           | Selector de canciones                                       |
-| `Super + L`           | Bloquea la pantalla)                    |
-| `Super + Q`           | Cerrar ventana                                            |
-| `Super + Shift + R`   | Recargar configuración de Sway                            |
-| `Super + Shift + E`   | Salir de Sway con confirmación (ventana swaynag)          |
-| `Super + ←/↓/↑/→`     | Mover el foco entre ventanas                              |
-| `Super + Shift + ←/↓/↑/→` | Mover la ventana actual                               |
-| `Super + 1...5`       | Cambiar de workspace                                      |
-| `Super + Shift + 1...5` | Mover ventana al workspace correspondiente              |
-| `Super + B`           | Dividir horizontalmente (splith)                          |
-| `Super + V`           | Dividir verticalmente (splitv)                            |
-| `Super + F`           | Alternar pantalla completa                                |
-| `Super + Shift + Espacio` | Alternar modo flotante                              |
-| `Super + Espacio`     | Alternar foco entre ventana flotante/tiling               |
-| `Super + A`           | Foco al contenedor padre                                  |
-| `Super + O`           | Alternar modo de layout                                   |
-| `Super + X`           | Enviar ventana al scratchpad                              |
-| `Super + Z`           | Mostrar scratchpad                                        |
-| `Super + R`           | Entrar al modo de resize                                  |
-| `XF86Audio...`        | Control de volumen y micrófono                            |
-| `XF86MonBrightness...`| Control de brillo de pantalla                             |
-| `Print`               | Captura de pantalla del HDMI                              |
-| `Shift + Print`       | Captura de pantalla del eDP                               |
-| `Super + Ctrl + ←/→`  | Canción anterior / siguiente en MPD                       |
-| `Super + Ctrl + ↑`    | Pausar/Reanudar música (mpc toggle)                       |
-| `Super + Ctrl + ↓`    | Reproducir música (mpc play)                              |
-| `Super + S`           | Detener música (mpc stop)                                 |
+| Shortcut               | Action                                                   |
+|------------------------|----------------------------------------------------------|
+| `Super + Enter`        | Launch terminal                                          |
+| `Super + D`            | Open app launcher                                        |
+| `Super + P`            | Playlist selector                                        |
+| `Super + Shift + P`    | Update playlist                                          |
+| `Super + M`            | Music selector                                           |
+| `Super + L`            | Lock screen                                              |
+| `Super + Q`            | Close focused window                                     |
+| `Super + Shift + R`    | Reload Sway config                                       |
+| `Super + Shift + E`    | Exit Sway with confirmation (swaynag window)             |
+| `Super + ←/↓/↑/→`      | Focus window directionally                               |
+| `Super + Shift + ←/↓/↑/→` | Move window in direction                              |
+| `Super + 1...5`        | Switch workspace                                         |
+| `Super + Shift + 1...5`| Move window to workspace                                 |
+| `Super + B`            | Split horizontally (splith)                              |
+| `Super + V`            | Split vertically (splitv)                                |
+| `Super + F`            | Toggle fullscreen                                        |
+| `Super + Shift + Space`| Toggle floating mode                                     |
+| `Super + Space`        | Toggle focus between tiling and floating                 |
+| `Super + A`            | Focus parent container                                   |
+| `Super + O`            | Toggle layout mode                                       |
+| `Super + X`            | Send window to scratchpad                                |
+| `Super + Z`            | Show scratchpad window                                   |
+| `Super + R`            | Enter resize mode                                        |
+| `XF86Audio...`         | Audio control                                            |
+| `XF86MonBrightness...` | Screen brightness control                                |
+| `Print`                | Screenshot (HDMI-A-1)                                    |
+| `Shift + Print`        | Screenshot (eDP-1)                                       |
+| `Super + Ctrl + ←/→`   | Next / Previous song in MPD                              |
+| `Super + Ctrl + ↑`     | Play/Pause music (mpc toggle)                            |
+| `Super + Ctrl + ↓`     | Play music (mpc play)                                    |
+| `Super + S`            | Stop music (mpc stop)                                    |
 
 ---
 
-### 📝 Neovim (NvChad base con mappings personalizados)
+### 📝 Neovim (NvChad base with custom mappings)
 
-| Combinación           | Acción                                      |
-|-----------------------|---------------------------------------------|
-| `Ctrl + A`            | Seleccionar todo el archivo                 |
-| `Ctrl + Z`            | Buscar archivos (Telescope)                |
-| `Leader + E`          | Abrir/cerrar NvimTree                       |
-| `Ctrl + S`            | Guardar archivo (en todos los modos)       |
-| `Leader + Y` (visual) | Copiar al portapapeles del sistema         |
-| `Ctrl + E`            | Salir de Neovim sin guardar                 |
-| `Ctrl + ←/↓/↑/→`      | Mover entre splits                          |
-| `Ctrl + Shift + →`    | Crear split vertical                        |
-| `Ctrl + Shift + ↓`    | Crear split horizontal                      |
-| `Ctrl + Alt + ↑/↓/←/→`| Redimensionar splits                        |
-| `Leader + R`          | Recargar configuración de Neovim           |
-| `Esc` en terminal     | Salir del modo terminal (insert → normal)  |
+| Shortcut               | Action                                      |
+|------------------------|---------------------------------------------|
+| `Ctrl + A`             | Select entire file                          |
+| `Ctrl + Z`             | Search files (Telescope)                    |
+| `Leader + E`           | Toggle NvimTree                             |
+| `Ctrl + S`             | Save file (in all modes)                    |
+| `Leader + Y` (visual)  | Copy to system clipboard                    |
+| `Ctrl + E`             | Quit Neovim without saving                  |
+| `Ctrl + ←/↓/↑/→`       | Navigate splits                             |
+| `Ctrl + Shift + →`     | Create vertical split                       |
+| `Ctrl + Shift + ↓`     | Create horizontal split                     |
+| `Ctrl + Alt + ↑/↓/←/→` | Resize splits                               |
+| `Leader + R`           | Reload Neovim config                        |
+| `Esc` in terminal mode | Exit terminal mode (to normal mode)         |
 
 ---
 
-## ⚠️ **Waybar solo aparece en el monitor HDMI (HDMI-A-1)**
+## ⚠️ Waybar only appears on HDMI monitor (HDMI-A-1)
 
- Esta configuración de Waybar está pensada para usarse únicamente en un **monitor externo (HDMI-A-1)**.
+This Waybar config is designed to run **only on an external monitor** (`HDMI-A-1`).
 
- Si usas un solo monitor (como `eDP-1` en una laptop sin pantalla adicional), la barra **no se mostrará** por defecto.
+If you're using a single screen (like `eDP-1` on a laptop without HDMI), the bar **won't show up** by default.
 
- 🔧 Para cambiar esto:
+🔧 To change this:
 
- 1. Abre el archivo `~/.config/waybar/config`.
- 2. Busca la sección `"output": "HDMI-A-1"` y cámbiala a `"output": "eDP-1"` o elimínala para que funcione en cualquier pantalla.
+1. Open the file `~/.config/waybar/config`.
+2. Find the line `"output": "HDMI-A-1"` and change it to `"output": "eDP-1"` or remove the line entirely to show on all screens.
 
- También puedes duplicar la configuración si quieres una barra en ambos monitores.
+You can also duplicate the configuration if you want bars on both monitors.
 
+---
 
-## 🏗️ Instalación
+## ⚠️ Important note
 
-> ⚠️ Este setup asume que usas una distro basada en Arch Linux. Aún así, puede adaptarse fácilmente.
+This configuration is built for **laptops using dual monitor setups** (eDP-1 and HDMI-A-1).
 
-### 1. Clona el repositorio
+If you're using **only one monitor** (like a desktop or single-screen laptop), make sure to:
+
+- Edit the `sway/config` file and adjust workspace outputs.
+- Update screenshot commands (`grim`) to match your screen setup.
+
+Use `swaymsg -t get_outputs` to check your current monitor names.
+
+---
+
+## 🏗️ Installation
+
+> ⚠️ This setup assumes you're using an Arch-based distribution. It can still be adapted to others.
+
+### 1. Clone the repo
 
 ```bash
 git clone https://github.com/Zumoxsx/swayfx.git ~/dotfiles
 cd ~/dotfiles
-sudo pacman -S sway waybar alacritty wofi mako neovim ranger mpd lsd
+sudo pacman -S sway waybar alacritty wofi mako neovim ranger mpd mpc brightnessctl lsd grim libnotify
 # AUR:
-yay -S swayfx-git
+yay -S swayfx-git swaylock-effects 
 cp -r sway ~/.config/
 cp -r waybar ~/.config/
 cp -r alacritty ~/.config/
@@ -143,4 +158,3 @@ cp -r fonts /usr/share/fonts
 fc-cache -fv
 cp -r icons ~/.icons
 reboot
-```
