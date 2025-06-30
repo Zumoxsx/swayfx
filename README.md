@@ -157,4 +157,5 @@ cp -r lsd ~/.config/
 cp -r fonts /usr/share/fonts
 fc-cache -fv
 cp -r icons ~/.icons
+cp .bashrc ~/
 reboot
