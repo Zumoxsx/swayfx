@@ -51,12 +51,12 @@ My little **swayfx** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/
 
 | Combinación           | Acción                                                    |
 |-----------------------|-----------------------------------------------------------|
-| `Super + Enter`       | Abrir terminal (Alacritty)                                |
-| `Super + D`           | Lanzar menú de apps (`menu.sh` con Wofi o similar)        |
-| `Super + P`           | Ejecutar `playlist.sh` (lista de reproducción)            |
-| `Super + Shift + P`   | Ejecutar `make_playlist.sh` (crear playlist)              |
-| `Super + M`           | Ejecutar `music.sh`                                       |
-| `Super + L`           | Ejecutar `lock.sh` (bloquear pantalla)                    |
+| `Super + Enter`       | Abrir terminal                                   |
+| `Super + D`           | Lanzar menú de apps        |
+| `Super + P`           | Selector de playlist            |
+| `Super + Shift + P`   | Actualiza  playlist              |
+| `Super + M`           | Selector de canciones                                       |
+| `Super + L`           | Bloquea la pantalla)                    |
 | `Super + Q`           | Cerrar ventana                                            |
 | `Super + Shift + R`   | Recargar configuración de Sway                            |
 | `Super + Shift + E`   | Salir de Sway con confirmación (ventana swaynag)          |
@@ -89,8 +89,6 @@ My little **swayfx** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/
 
 | Combinación           | Acción                                      |
 |-----------------------|---------------------------------------------|
-| `;`                   | Entrar al modo comando (como `:`)           |
-| `jk` en modo insert   | Salir al modo normal                        |
 | `Ctrl + A`            | Seleccionar todo el archivo                 |
 | `Ctrl + Z`            | Buscar archivos (Telescope)                |
 | `Leader + E`          | Abrir/cerrar NvimTree                       |
