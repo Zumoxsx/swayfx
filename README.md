@@ -1,8 +1,6 @@
 # 🎯 Zumo's SwayFX Dotfiles
 
-Bienvenido a mi setup personalizado con **SwayFX**, un fork de Sway con efectos gráficos modernos.  
-Estas dotfiles están diseñadas para ser rápidas, limpias y visualmente agradables.
-
+My little **swayfx** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/dotfiles?tab=readme-ov-file#-the-themes) theme z0mbi3. It's not ready yet but you can try it...
 ---
 
 ## 🧰 Aplicaciones incluidas
