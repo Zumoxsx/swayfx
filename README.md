@@ -20,16 +20,31 @@ Estas dotfiles están diseñadas para ser rápidas, limpias y visualmente agrada
 | [MPD](https://www.musicpd.org) + [ncmcpp](https://github.com/arybczak/ncmpcpp) | Música en la terminal 🎵 |
 
 ---
-
 ## 🖼️ Capturas de pantalla
 
-| Principal | Nvim | Waybar + Power | Wofi | Música | Notificación |
-|----------|------|----------------|------|--------|--------------|
-| ![](images/all.png) | ![](images/nvim.png) | ![](images/power.png) | ![](images/wofi.png) | ![](images/select_music.png) | ![](images/ntf_music.png) |
+### Escritorio completo
+![all](images/all.png)
 
-> 🔍 También: [ranger.png](images/ranger.png), [browser.png](images/browser.png)
+### Neovim
+![nvim](images/nvim.png)
 
----
+### Power menu (Waybar)
+![power](images/power.png)
+
+### Wofi
+![wofi](images/wofi.png)
+
+### Selector de música (ncmcpp)
+![select_music](images/select_music.png)
+
+### Notificación de música (Mako)
+![ntf_music](images/ntf_music.png)
+
+### Ranger
+![ranger](images/ranger.png)
+
+### Navegador
+![browser](images/browser.png)
 
 ## 🏗️ Instalación
 
