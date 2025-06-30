@@ -106,6 +106,18 @@ My little **swayfx** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/
 
 ---
 
+> ⚠️ **Waybar solo aparece en el monitor HDMI (HDMI-A-1)**
+>
+> Esta configuración de Waybar está pensada para usarse únicamente en un **monitor externo (HDMI-A-1)**.
+>
+> Si usas un solo monitor (como `eDP-1` en una laptop sin pantalla adicional), la barra **no se mostrará** por defecto.
+>
+> 🔧 Para cambiar esto:
+>
+> 1. Abre el archivo `~/.config/waybar/config`.
+> 2. Busca la sección `"output": "HDMI-A-1"` y cámbiala a `"output": "eDP-1"` o elimínala para que funcione en cualquier pantalla.
+>
+> También puedes duplicar la configuración si quieres una barra en ambos monitores.
 
 
 ## 🏗️ Instalación
