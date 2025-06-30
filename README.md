@@ -23,7 +23,7 @@ My personal **SwayFX** dotfiles, inspired by [gh0stzk](https://github.com/gh0stz
 ### Full Desktop
 ![all](images/all.png)
 
-### Neovim
+### Neovim (nvchad)
 ![nvim](images/nvim.png)
 
 ### Power Menu
@@ -32,7 +32,7 @@ My personal **SwayFX** dotfiles, inspired by [gh0stzk](https://github.com/gh0stz
 ### Wofi
 ![wofi](images/wofi.png)
 
-### Music
+### Music (wofi)
 ![select_music](images/select_music.png)
 
 ### Music Notification (Mako)
@@ -41,7 +41,7 @@ My personal **SwayFX** dotfiles, inspired by [gh0stzk](https://github.com/gh0stz
 ### Ranger
 ![ranger](images/ranger.png)
 
-### Browser
+### Browser (falkon)
 ![browser](images/browser.png)
 
 ---
