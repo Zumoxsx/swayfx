@@ -31,7 +31,7 @@ My little **swayfx** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/
 ### Wofi
 ![wofi](images/wofi.png)
 
-### Selector de música
+### Music
 ![select_music](images/select_music.png)
 
 ### Notificación de música (Mako)
@@ -42,3 +42,30 @@ My little **swayfx** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/
 
 ### Navegador
 ![browser](images/browser.png)
+
+## 🏗️ Instalación
+
+> ⚠️ Este setup asume que usas una distro basada en Arch Linux. Aún así, puede adaptarse fácilmente.
+
+### 1. Clona el repositorio
+
+```bash
+git clone https://github.com/Zumoxsx/swayfx.git ~/dotfiles
+cd ~/dotfiles
+sudo pacman -S sway waybar alacritty wofi mako neovim ranger mpd lsd
+# AUR:
+yay -S swayfx-git
+cp -r sway ~/.config/
+cp -r waybar ~/.config/
+cp -r alacritty ~/.config/
+cp -r wofi ~/.config/
+cp -r mako ~/.config/
+cp -r nvim ~/.config/
+cp -r ranger ~/.config/
+cp -r mpd ~/.config/
+cp -r lsd ~/.config/
+cp -r fonts /usr/share/fonts
+fc-cache -fv
+cp -r icons ~/.icons
+reboot
+```
