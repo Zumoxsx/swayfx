@@ -7,9 +7,9 @@ Estas dotfiles están diseñadas para ser rápidas, limpias y visualmente agrada
 
 ## 🧰 Aplicaciones incluidas
 
-| Herramienta | Uso | Enlace oficial |
-|------------|-----|----------------|
-| [SwayFX](https://github.com/WillPower3309/swayfx) | Compositor Wayland con efectos | ⭐ Recomiendo compilarlo manualmente |
+| Herramienta | Uso | 
+|------------|-----|
+| [SwayFX](https://github.com/WillPower3309/swayfx) | Compositor Wayland con efectos |
 | [Waybar](https://github.com/Alexays/Waybar) | Barra de estado altamente personalizable | 
 | [Alacritty](https://github.com/alacritty/alacritty) | Terminal rápida y con soporte para GPU |
 | [Wofi](https://hg.sr.ht/~scoopta/wofi) | Lanzador de aplicaciones estilo rofi para Wayland |
