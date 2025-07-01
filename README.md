@@ -148,10 +148,22 @@ Your version of ly must be 1.0.3 for the configuration to work
 ```bash
 git clone https://github.com/Zumoxsx/swayfx.git ~/dotfiles
 cd ~/dotfiles
-sudo pacman -S sway waybar alacritty wofi mako neovim ranger mpd mpc brightnessctl lsd grim libnotify ly  
-# AUR:
+ ```
+### 2. Download the necessary packages and dependencies
+```bash
+sudo pacman -S sway waybar alacritty wofi mako neovim ranger mpd mpc brightnessctl lsd grim libnotify ly
+```
+#### AUR:
+```bash
 yay -S swayfx-git swaylock-effects downgrade
-downgrade ly | Select 1.0.3
+```
+#### In downgrade select 1.0.3:
+```
+downgrade ly
+```
+
+### 3. Copy all configurations to their respective directories
+```bash
 cp -r sway ~/.config/
 cp -r waybar ~/.config/
 cp -r alacritty ~/.config/
@@ -166,4 +178,8 @@ fc-cache -fv
 cp -r icons ~/.icons
 cp .bashrc ~/
 cp config.ini /etc/ly
+```
+### 4. Reboot
+```bash
 reboot
+```
