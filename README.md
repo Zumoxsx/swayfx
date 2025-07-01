@@ -154,7 +154,7 @@ cd ~/dotfiles
  ```
 ### 2. Download the necessary packages and dependencies
 ```bash
-sudo pacman -S sway waybar alacritty wofi mako neovim ranger mpd mpc brightnessctl lsd bat grim libnotify ly
+sudo pacman -S sway waybar alacritty wofi mako neovim ranger mpd mpc brightnessctl lsd bat grim libnotify ly alsa-utils ffmpeg
 ```
 #### AUR:
 ```bash
