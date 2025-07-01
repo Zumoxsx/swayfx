@@ -15,6 +15,7 @@ My personal **SwayFX** dotfiles, inspired by [gh0stzk](https://github.com/gh0stz
 | [Ranger](https://github.com/ranger/ranger) | Terminal file manager |
 | [LSD](https://github.com/lsd-rs/lsd) | Improved `ls` command with icons |
 | [MPD](https://www.musicpd.org) | Music player daemon |
+| [Ly](https://github.com/fairyglade/ly) | Display Manager|
 
 ---
 
@@ -133,6 +134,11 @@ Use `swaymsg -t get_outputs` to check your current monitor names.
 
 ---
 
+## ⚠️ Other note
+Your version of ly must be 1.0.3 for the configuration to work
+
+---
+
 ## 🏗️ Installation
 
 > ⚠️ This setup assumes you're using an Arch-based distribution. It can still be adapted to others.
@@ -142,9 +148,10 @@ Use `swaymsg -t get_outputs` to check your current monitor names.
 ```bash
 git clone https://github.com/Zumoxsx/swayfx.git ~/dotfiles
 cd ~/dotfiles
-sudo pacman -S sway waybar alacritty wofi mako neovim ranger mpd mpc brightnessctl lsd grim libnotify
+sudo pacman -S sway waybar alacritty wofi mako neovim ranger mpd mpc brightnessctl lsd grim libnotify ly  
 # AUR:
-yay -S swayfx-git swaylock-effects 
+yay -S swayfx-git swaylock-effects downgrade
+downgrade ly | Select 1.0.3
 cp -r sway ~/.config/
 cp -r waybar ~/.config/
 cp -r alacritty ~/.config/
