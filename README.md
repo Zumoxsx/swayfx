@@ -1,6 +1,6 @@
 # SwayFX Dotfiles
 
-[My personal **SwayFX** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/dotfiles?tab=readme-ov-file#-the-themes) z0mbi3 theme. It's not finished yet, but feel free to try it...]
+My personal **SwayFX** dotfiles, inspired by [gh0stzk](https://github.com/gh0stzk/dotfiles?tab=readme-ov-file#-the-themes) z0mbi3 theme. It's not finished yet, but feel free to try it...
 ![gif](images/images.gif)
 
 ## 🧰 Included Applications
