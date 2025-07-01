@@ -16,6 +16,7 @@ My personal **SwayFX** dotfiles, inspired by [gh0stzk](https://github.com/gh0stz
 | [Neovim](https://neovim.io) | Modern extensible text editor |
 | [Ranger](https://github.com/ranger/ranger) | Terminal file manager |
 | [LSD](https://github.com/lsd-rs/lsd) | Improved `ls` command with icons |
+| [Bat](https://github.com/sharkdp/bat) | Cat on steroids|
 | [MPD](https://www.musicpd.org) | Music player daemon |
 | [Ly](https://github.com/fairyglade/ly) | Display Manager|
 
